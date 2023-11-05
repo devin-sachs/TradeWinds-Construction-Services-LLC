@@ -11208,3 +11208,23 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.gallery-container {
+width: 100%;
+min-height: 100vh;
+/* display: flex; 
+align-items: center;
+justify-content: center; */
+padding: 50px 8%;
+
+}
+
+.gallery-images { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 30px
+}
+
+.gallery-images img{
+  width: 100%;
+}
