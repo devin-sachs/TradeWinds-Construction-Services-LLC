@@ -7705,7 +7705,7 @@ textarea.form-control-lg {
 .my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-}
+} 
 
 .my-1 {
   margin-top: 0.25rem !important;
@@ -8159,6 +8159,8 @@ textarea.form-control-lg {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .text-capitalize {
