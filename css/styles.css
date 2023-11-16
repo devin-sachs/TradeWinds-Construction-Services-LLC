@@ -133,7 +133,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(3rem + 1vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -1115,7 +1115,7 @@ progress {
   }
   .col-md-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 50%;
   }
   .col-md-5 {
     flex: 0 0 auto;
@@ -7810,7 +7810,7 @@ textarea.form-control-lg {
 }
 
 .mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .mb-5 {
@@ -8250,6 +8250,7 @@ textarea.form-control-lg {
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.75) !important;
+  text-align: left;
 }
 
 .text-white-50 .about-list {
@@ -11120,6 +11121,7 @@ body {
 
 .about-section {
   padding-top: 10rem;
+  padding-bottom: 2.5rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
