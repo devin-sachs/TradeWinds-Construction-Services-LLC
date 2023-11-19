@@ -67,3 +67,73 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 } 
+
+
+// Reading image gallery for Rennovations and Remodels folder 
+const rennoGallery = document.getElementById('rennovation-and-remodels-gallery');
+
+let rennovationImageIndexes = [];
+let rennoLowEnd = 1;
+let rennoHighEnd = 52;
+for (let rennoIndex = rennoLowEnd; rennoIndex <= rennoHighEnd; rennoIndex++) {
+    rennovationImageIndexes.push(rennoIndex);
+}
+
+//const selectedIndex = null; 
+
+rennovationImageIndexes.forEach(i => {
+    var anchor = document.createElement('a');
+    //anchor.href =`assets/images/IMG_${i}.jpg`; // //' data-lightbox = "GalleryName" data-title = "ImageCaption1"';
+    anchor.setAttribute('href',`assets/images/rennovation-and-remodels/renno-after/rennovations-and-remodels-after-${i}.jpg` );
+    anchor.setAttribute('data-lightbox', 'RennovationGallery');
+    anchor.setAttribute('data-title', 'ImageCaption1')
+    var image = document.createElement('IMG');
+    image.setAttribute('src',`assets/images/rennovation-and-remodels/renno-after/rennovations-and-remodels-after-${i}.jpg`);
+    anchor.appendChild(image);
+    rennoGallery.appendChild(anchor);
+})
+
+// Reading image gallery for Coatings folder 
+const coatGallery = document.getElementById('coatings-gallery');
+
+let coatImageIndexes = [];
+let coatLowEnd = 1;
+let coatHighEnd = 39;
+for (let coatIndex = coatLowEnd; coatIndex <= coatHighEnd; coatIndex++) {
+    coatImageIndexes.push(coatIndex);
+}
+
+//const selectedIndex = null; 
+
+coatImageIndexes.forEach(i => {
+    var anchor = document.createElement('a');
+    anchor.setAttribute('href',`assets/images/coatings/coatings-after/coatings-after-${i}.jpg` );
+    anchor.setAttribute('data-lightbox', 'CoatingGallery');
+    anchor.setAttribute('data-title', 'ImageCaption1')
+    var image = document.createElement('IMG');
+    image.setAttribute('src',`assets/images/coatings/coatings-after/coatings-after-${i}.jpg`);
+    anchor.appendChild(image);
+    coatGallery.appendChild(anchor);
+})
+
+// Reading image gallery for Gutters folder 
+const gutGallery = document.getElementById('gutters-gallery');
+
+let gutImageIndexes = [];
+let gutLowEnd = 1;
+let gutHighEnd = 13;
+for (let gutIndex = gutLowEnd; gutIndex <= gutHighEnd; gutIndex++) {
+    gutImageIndexes.push(gutIndex);
+}
+
+
+gutImageIndexes.forEach(i => {
+    var anchor = document.createElement('a');
+    anchor.setAttribute('href',`assets/images/gutters/gutters-${i}.jpg` );
+    anchor.setAttribute('data-lightbox', 'Gutters-Gallery');
+    anchor.setAttribute('data-title', 'ImageCaption1')
+    var image = document.createElement('IMG');
+    image.setAttribute('src',`assets/images/gutters/gutters-${i}.jpg`);
+    anchor.appendChild(image);
+    gutGallery.appendChild(anchor);
+})
