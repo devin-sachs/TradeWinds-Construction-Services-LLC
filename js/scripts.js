@@ -89,6 +89,7 @@ rennovationImageIndexes.forEach(i => {
     anchor.setAttribute('data-title', 'ImageCaption1')
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/rennovation-and-remodels/renno-after/rennovations-and-remodels-after-${i}.jpg`);
+        image.setAttribute('loading',`lazy`);
     anchor.appendChild(image);
     rennoGallery.appendChild(anchor);
 })
@@ -112,6 +113,7 @@ coatImageIndexes.forEach(i => {
     anchor.setAttribute('data-title', 'ImageCaption1')
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/coatings/coatings-after/coatings-after-${i}.jpg`);
+    image.setAttribute('loading',`lazy`);
     anchor.appendChild(image);
     coatGallery.appendChild(anchor);
 })
@@ -134,6 +136,7 @@ gutImageIndexes.forEach(i => {
     anchor.setAttribute('data-title', 'ImageCaption1')
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/gutters/gutters-${i}.jpg`);
+    image.setAttribute('loading',`lazy`);
     anchor.appendChild(image);
     gutGallery.appendChild(anchor);
 })
