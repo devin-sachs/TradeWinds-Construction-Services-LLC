@@ -11224,11 +11224,11 @@ padding: 50px 8%;
 .gallery-images { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  grid-gap: 30px
+  grid-gap: 10px
 }
 
 .gallery-images img{
-  width: 280px;
+  width: 100%;
   height: 230px;
 }
 
@@ -11284,4 +11284,11 @@ padding: 50px 8%;
 	/* background-repeat: no-repeat; */
 	background-attachment: scroll;
 	background-size: cover;
+}
+
+.before-and-after-headings {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
