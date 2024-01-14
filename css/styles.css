@@ -11213,11 +11213,7 @@ body {
 
 .gallery-container {
 width: 100%;
-/* min-height: 100vh; */
-/* display: flex; 
-align-items: center;
-justify-content: center; */
-padding: 50px 8%;
+padding: 0px 8%;
 
 }
 
@@ -11291,4 +11287,10 @@ padding: 50px 8%;
   margin-bottom: 1rem;
   text-align: center;
   font-weight: bold;
+}
+
+.gallery-intro{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
 }
