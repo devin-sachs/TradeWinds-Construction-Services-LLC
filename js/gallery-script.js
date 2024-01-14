@@ -32,7 +32,7 @@ beforeRennovationImageIndexes.forEach(i => {
     //anchor.href =`assets/images/IMG_${i}.jpg`; // //' data-lightbox = "GalleryName" data-title = "ImageCaption1"';
     anchor.setAttribute('href',`assets/images/rennovation-and-remodels/renno-before/rennovations-and-remodels-before-${i}.jpg` );
     anchor.setAttribute('data-lightbox', 'BeforeRennovationGallery');
-    anchor.setAttribute('data-title', 'ImageCaption1')
+    anchor.setAttribute('data-title', `rennovations-and-remodels-before-${i}`)
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/rennovation-and-remodels/renno-before/rennovations-and-remodels-before-${i}.jpg`);
         image.setAttribute('loading',`lazy`);
@@ -56,7 +56,7 @@ rennovationImageIndexes.forEach(i => {
     //anchor.href =`assets/images/IMG_${i}.jpg`; // //' data-lightbox = "GalleryName" data-title = "ImageCaption1"';
     anchor.setAttribute('href',`assets/images/rennovation-and-remodels/renno-after/rennovations-and-remodels-after-${i}.jpg` );
     anchor.setAttribute('data-lightbox', 'AfterRennovationGallery');
-    anchor.setAttribute('data-title', 'ImageCaption1')
+    anchor.setAttribute('data-title', `rennovations-and-remodels-after-${i}`)
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/rennovation-and-remodels/renno-after/rennovations-and-remodels-after-${i}.jpg`);
         image.setAttribute('loading',`lazy`);
@@ -78,8 +78,8 @@ for (let coatIndex = beforeCoatLowEnd; coatIndex <= beforeCoatHighEnd; coatIndex
 beforeCoatImageIndexes.forEach(i => {
     var anchor = document.createElement('a');
     anchor.setAttribute('href',`assets/images/coatings/coatings-before/coatings-before-${i}.jpg` );
-    anchor.setAttribute('data-lightbox', 'CoatingGallery');
-    anchor.setAttribute('data-title', 'ImageCaption1')
+    anchor.setAttribute('data-lightbox', 'BeforeCoatingGallery');
+    anchor.setAttribute('data-title', `coatings-before-${i}`)
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/coatings/coatings-before/coatings-before-${i}.jpg`);
     image.setAttribute('loading',`lazy`);
@@ -101,8 +101,8 @@ for (let coatIndex = afterCoatLowEnd; coatIndex <= afterCoatHighEnd; coatIndex++
 afterCoatImageIndexes.forEach(i => {
     var anchor = document.createElement('a');
     anchor.setAttribute('href',`assets/images/coatings/coatings-after/coatings-after-${i}.jpg` );
-    anchor.setAttribute('data-lightbox', 'CoatingGallery');
-    anchor.setAttribute('data-title', 'ImageCaption1')
+    anchor.setAttribute('data-lightbox', 'AfterCoatingGallery');
+    anchor.setAttribute('data-title', `coatings-after-${i}`)
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/coatings/coatings-after/coatings-after-${i}.jpg`);
     image.setAttribute('loading',`lazy`);
@@ -124,8 +124,8 @@ for (let gutIndex = beforeGutLowEnd; gutIndex <= beforeGutHighEnd; gutIndex++) {
 beforeGutImageIndexes.forEach(i => {
     var anchor = document.createElement('a');
     anchor.setAttribute('href',`assets/images/gutters/gut-before/gutters-before-${i}.jpg` );
-    anchor.setAttribute('data-lightbox', 'Gutters-Gallery');
-    anchor.setAttribute('data-title', 'ImageCaption1')
+    anchor.setAttribute('data-lightbox', 'BeforeGutters-Gallery');
+    anchor.setAttribute('data-title', `gutters-before-${i}`)
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/gutters/gut-before/gutters-before-${i}.jpg`);
     image.setAttribute('loading',`lazy`);
@@ -149,8 +149,8 @@ for (let gutIndex = afterGutLowEnd; gutIndex <= afterGutHighEnd; gutIndex++) {
 afterGutImageIndexes.forEach(i => {
     var anchor = document.createElement('a');
     anchor.setAttribute('href',`assets/images/gutters/gut-after/gutters-after-${i}.jpg` );
-    anchor.setAttribute('data-lightbox', 'Gutters-Gallery');
-    anchor.setAttribute('data-title', 'ImageCaption1')
+    anchor.setAttribute('data-lightbox', 'AfterGutters-Gallery');
+    anchor.setAttribute('data-title', `gutters-after-${i}`)
     var image = document.createElement('IMG');
     image.setAttribute('src',`assets/images/gutters/gut-after/gutters-after-${i}.jpg`);
     image.setAttribute('loading',`lazy`);
