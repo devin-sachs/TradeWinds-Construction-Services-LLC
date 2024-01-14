@@ -22,7 +22,7 @@ const beforeRennoGallery = document.getElementById('before-rennovation-and-remod
 
 let beforeRennovationImageIndexes = [];
 let beforeRennoLowEnd = 1;
-let beforeRennoHighEnd = 31;
+let beforeRennoHighEnd = 33;
 for (let rennoIndex = beforeRennoLowEnd; rennoIndex <= beforeRennoHighEnd; rennoIndex++) {
     beforeRennovationImageIndexes.push(rennoIndex);
 }
@@ -46,7 +46,7 @@ const afterRennoGallery = document.getElementById('after-rennovation-and-remodel
 
 let rennovationImageIndexes = [];
 let rennoLowEnd = 1;
-let rennoHighEnd = 52;
+let rennoHighEnd = 50;
 for (let rennoIndex = rennoLowEnd; rennoIndex <= rennoHighEnd; rennoIndex++) {
     rennovationImageIndexes.push(rennoIndex);
 }
@@ -69,7 +69,7 @@ const beforeCoatGallery = document.getElementById('before-coatings-gallery');
 
 let beforeCoatImageIndexes = [];
 let beforeCoatLowEnd = 1;
-let beforeCoatHighEnd = 21;
+let beforeCoatHighEnd = 28;
 for (let coatIndex = beforeCoatLowEnd; coatIndex <= beforeCoatHighEnd; coatIndex++) {
     beforeCoatImageIndexes.push(coatIndex);
 }
@@ -77,11 +77,11 @@ for (let coatIndex = beforeCoatLowEnd; coatIndex <= beforeCoatHighEnd; coatIndex
 
 beforeCoatImageIndexes.forEach(i => {
     var anchor = document.createElement('a');
-    anchor.setAttribute('href',`assets/images/coatings/coatings-after/coatings-after-${i}.jpg` );
+    anchor.setAttribute('href',`assets/images/coatings/coatings-before/coatings-before-${i}.jpg` );
     anchor.setAttribute('data-lightbox', 'CoatingGallery');
     anchor.setAttribute('data-title', 'ImageCaption1')
     var image = document.createElement('IMG');
-    image.setAttribute('src',`assets/images/coatings/coatings-after/coatings-after-${i}.jpg`);
+    image.setAttribute('src',`assets/images/coatings/coatings-before/coatings-before-${i}.jpg`);
     image.setAttribute('loading',`lazy`);
     anchor.appendChild(image);
     beforeCoatGallery.appendChild(anchor);
@@ -92,7 +92,7 @@ const afterCoatGallery = document.getElementById('after-coatings-gallery');
 
 let afterCoatImageIndexes = [];
 let afterCoatLowEnd = 1;
-let afterCoatHighEnd = 21;
+let afterCoatHighEnd = 32;
 for (let coatIndex = afterCoatLowEnd; coatIndex <= afterCoatHighEnd; coatIndex++) {
     afterCoatImageIndexes.push(coatIndex);
 }
@@ -115,7 +115,7 @@ const beforeGutGallery = document.getElementById('before-gutters-gallery');
 
 let beforeGutImageIndexes = [];
 let beforeGutLowEnd = 1;
-let beforeGutHighEnd = 13;
+let beforeGutHighEnd = 17;
 for (let gutIndex = beforeGutLowEnd; gutIndex <= beforeGutHighEnd; gutIndex++) {
     beforeGutImageIndexes.push(gutIndex);
 }
@@ -123,11 +123,11 @@ for (let gutIndex = beforeGutLowEnd; gutIndex <= beforeGutHighEnd; gutIndex++) {
 
 beforeGutImageIndexes.forEach(i => {
     var anchor = document.createElement('a');
-    anchor.setAttribute('href',`assets/images/gutters/gutters-${i}.jpg` );
+    anchor.setAttribute('href',`assets/images/gutters/gut-before/gutters-before-${i}.jpg` );
     anchor.setAttribute('data-lightbox', 'Gutters-Gallery');
     anchor.setAttribute('data-title', 'ImageCaption1')
     var image = document.createElement('IMG');
-    image.setAttribute('src',`assets/images/gutters/gutters-${i}.jpg`);
+    image.setAttribute('src',`assets/images/gutters/gut-before/gutters-before-${i}.jpg`);
     image.setAttribute('loading',`lazy`);
     anchor.appendChild(image);
     beforeGutGallery.appendChild(anchor);
@@ -139,8 +139,8 @@ beforeGutImageIndexes.forEach(i => {
 const afterGutGallery = document.getElementById('after-gutters-gallery');
 
 let afterGutImageIndexes = [];
-let afterGutLowEnd = 1;
-let afterGutHighEnd = 13;
+let afterGutLowEnd = 1; 
+let afterGutHighEnd = 21;
 for (let gutIndex = afterGutLowEnd; gutIndex <= afterGutHighEnd; gutIndex++) {
     afterGutImageIndexes.push(gutIndex);
 }
@@ -148,11 +148,11 @@ for (let gutIndex = afterGutLowEnd; gutIndex <= afterGutHighEnd; gutIndex++) {
 
 afterGutImageIndexes.forEach(i => {
     var anchor = document.createElement('a');
-    anchor.setAttribute('href',`assets/images/gutters/gutters-${i}.jpg` );
+    anchor.setAttribute('href',`assets/images/gutters/gut-after/gutters-after-${i}.jpg` );
     anchor.setAttribute('data-lightbox', 'Gutters-Gallery');
     anchor.setAttribute('data-title', 'ImageCaption1')
     var image = document.createElement('IMG');
-    image.setAttribute('src',`assets/images/gutters/gutters-${i}.jpg`);
+    image.setAttribute('src',`assets/images/gutters/gut-after/gutters-after-${i}.jpg`);
     image.setAttribute('loading',`lazy`);
     anchor.appendChild(image);
     afterGutGallery.appendChild(anchor);
