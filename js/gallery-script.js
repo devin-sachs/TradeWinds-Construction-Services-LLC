@@ -22,7 +22,7 @@ const beforeRennoGallery = document.getElementById('before-rennovation-and-remod
 
 let beforeRennovationImageIndexes = [];
 let beforeRennoLowEnd = 1;
-let beforeRennoHighEnd = 33;
+let beforeRennoHighEnd = 38;
 for (let rennoIndex = beforeRennoLowEnd; rennoIndex <= beforeRennoHighEnd; rennoIndex++) {
     beforeRennovationImageIndexes.push(rennoIndex);
 }
@@ -46,7 +46,7 @@ const afterRennoGallery = document.getElementById('after-rennovation-and-remodel
 
 let rennovationImageIndexes = [];
 let rennoLowEnd = 1;
-let rennoHighEnd = 50;
+let rennoHighEnd = 68;
 for (let rennoIndex = rennoLowEnd; rennoIndex <= rennoHighEnd; rennoIndex++) {
     rennovationImageIndexes.push(rennoIndex);
 }
